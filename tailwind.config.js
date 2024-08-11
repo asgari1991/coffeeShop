@@ -33,8 +33,12 @@ module.exports = {
         30: "7.5rem",
       },
       container:{
-        DEFAULT: "1rem",
+        center:true,
+        padding:{
+          DEFAULT: "1rem",
         lg: "0.625rem"
+        }
+        
       }
     },
     screens: {
