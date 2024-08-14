@@ -5,7 +5,7 @@ export default function Main() {
     <main>
       <section className="home relative h-200 xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top] ">
         <div className="container relative h-full md:min-h-screen flex justify-end items-center overflow-y-hidden">
-{/* Text in Header */}
+{/*Text in Banner */}
           <div className="text-white ">
             <h2 className="font-MorabbaBold text-2xl md:text-6xl/[62px] mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h2>
             <span className="font-MorabbaLight text-xl md:text-5xl/[64px] ">یک فنجان بالانس!</span>
