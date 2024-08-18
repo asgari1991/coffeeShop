@@ -3,16 +3,19 @@ import MobileNavMenu from "../MobileNavMenu/MobileNavMenu";
 
 export default function MobileHeader() {
   const [showNavMenu, setShowNavMenu] = useState(false);
-  const [showCart,setShowCart]=useState(false)
-  const [showOverlay,setShowOverlay]=useState(false)
- 
-  
+  const [showCart, setShowCart] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(false);
+
   return (
     <>
       <div className="flex md:hidden items-center justify-between px-4 h-16 bg-white dark:bg-zinc-700">
         {/*Nav Icon */}
-        <div onClick={() => {setShowNavMenu(true)
-        setShowOverlay(true)}}>
+        <div
+          onClick={() => {
+            setShowNavMenu(true);
+            setShowOverlay(true);
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -66,26 +69,24 @@ export default function MobileHeader() {
                   <path d="M119.307 41.8896C119.365 47.3094 119.598 52.2631 119.715 52.9625C120.006 54.3029 120.181 54.3029 128.223 54.3029H136.382L137.256 52.2631C138.364 49.524 138.364 49.524 135.974 50.5148C133.41 51.5638 128.515 51.6803 127.757 50.6313C127.466 50.2816 127.291 48.9995 127.349 47.8922C127.407 46.7849 127.524 45.5028 127.524 45.0949C127.582 44.6286 128.573 44.3955 130.438 44.3955C133.41 44.3955 134.984 43.3465 134.401 41.8313C134.168 41.2485 133.002 40.8988 130.671 40.7823L127.291 40.6074L127.116 38.5094C126.883 35.4789 127.932 34.7796 131.72 35.5955C134.401 36.1783 134.809 36.12 135.508 35.2458C135.974 34.663 136.266 33.7889 136.149 33.3226C136.033 32.6233 134.517 32.4485 127.582 32.2736L119.132 32.0988L119.307 41.8896Z" />
                 </svg>
               </div>
-              <div onClick={() => {setShowNavMenu(false)
-              setShowOverlay(false)}}>
+              <div
+                onClick={() => {
+                  setShowNavMenu(false);
+                  setShowOverlay(false);
+                }}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-5 h-5 text-zinc-600 dark:text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="size-5"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18 18 6M6 6l12 12"
-                  />
+                  <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
                 </svg>
               </div>
             </div>
             {/*Nav Menu */}
-           <MobileNavMenu/>
+            <MobileNavMenu />
           </div>
         )}
         {/*Logo type */}
@@ -110,11 +111,13 @@ export default function MobileHeader() {
           </svg>
         </div>
         {/*Cart Icon */}
-        <div onClick={()=>{
-setShowCart(true)
-setShowNavMenu(false)
-setShowOverlay(true)
-        }}>
+        <div
+          onClick={() => {
+            setShowCart(true);
+            setShowNavMenu(false);
+            setShowOverlay(true);
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -133,106 +136,102 @@ setShowOverlay(true)
         {/*Cart */}
         {showCart && (
           <div className="fixed top-0 bottom-0 left-0 flex flex-col w-64 min-h-screen pt-5 px-4 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all ">
-          {/*Cart Header */}
-          <div className="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10">
-            <div onClick={() =>{
-setShowCart(false)
-setShowOverlay(false)
-            } }>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-5 h-5 text-zinc-600 dark:text-white"
+            {/*Cart Header */}
+            <div className="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10">
+              <div
+                onClick={() => {
+                  setShowCart(false);
+                  setShowOverlay(false);
+                }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-5 h-5 text-zinc-600 dark:text-white"
+                >
+                  <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                </svg>
+              </div>
+              <span className="text-zinc-700 dark:text-white">سبد خرید</span>
+            </div>
+            {/* Cart Body */}
+            <div className="child:pb-5 child:mb-5">
+              <div className="font-DanaMedium flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                <img
+                  src="images/products/p1.png"
+                  className="w-[90px] h-[90px]"
+                  alt="p1"
                 />
-              </svg>
-            </div>
-            <span className="text-zinc-700 dark:text-white">سبد خرید</span>
-          </div>
-          {/* Cart Body */}
-          <div className="child:pb-5 child:mb-5">
-            <div className="font-DanaMedium flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
-              <img
-                src="images/products/p1.png"
-                className="w-[90px] h-[90px]"
-                alt="p1"
-              />
-              <div className="flex flex-col justify-between gap-y-1.5">
-                <h4 className=" text-zinc-700 dark:text-white text-sm line-clamp-2">
-                  قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
-                </h4>
-                <div>
-                  <span className="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">
-                    14.500 تومان تخفیف
-                  </span>
-                  <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
-                    175000
-                    <span className="font-DanaMedium text-xs"> تومان</span>
+                <div className="flex flex-col justify-between gap-y-1.5">
+                  <h4 className=" text-zinc-700 dark:text-white text-sm line-clamp-2">
+                    قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                  </h4>
+                  <div>
+                    <span className="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">
+                      14.500 تومان تخفیف
+                    </span>
+                    <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
+                      175000
+                      <span className="font-DanaMedium text-xs"> تومان</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="font-DanaMedium flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10  ">
+                <img
+                  src="images/products/p2.png"
+                  className="w-[90px] h-[90px]"
+                  alt="p1"
+                />
+                <div className="flex flex-col justify-between gap-y-1.5">
+                  <h4 className=" text-zinc-700 dark:text-white text-sm line-clamp-2">
+                    قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                  </h4>
+                  <div>
+                    <span className="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">
+                      15.500 تومان تخفیف
+                    </span>
+                    <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
+                      185000
+                      <span className="font-DanaMedium text-xs"> تومان</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="font-DanaMedium flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10  ">
-              <img
-                src="images/products/p2.png"
-                className="w-[90px] h-[90px]"
-                alt="p1"
-              />
-              <div className="flex flex-col justify-between gap-y-1.5">
-                <h4 className=" text-zinc-700 dark:text-white text-sm line-clamp-2">
-                  قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
-                </h4>
-                <div>
-                  <span className="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">
-                    15.500 تومان تخفیف
-                  </span>
-                  <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
-                    185000
-                    <span className="font-DanaMedium text-xs"> تومان</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*Cart Footer */}
-          <div className="flex items-end gap-x-4 mt-auto mb-8">
-            <a
-              href="#"
-              className="flex items-center justify-center w-28 h-11 text-white bg-teal-600 dark:bg-emerald-500 rounded-xl"
-            >
-              ثبت سفارش
-            </a>
+            {/*Cart Footer */}
+            <div className="flex items-end gap-x-4 mt-auto mb-8">
+              <a
+                href="#"
+                className="flex items-center justify-center w-28 h-11 text-white bg-teal-600 dark:bg-emerald-500 rounded-xl"
+              >
+                ثبت سفارش
+              </a>
 
-            <div>
-              <span className="font-DanaMedium  text-gray-300 text-xs tracking-tighter">
-                مبلغ قابل پرداخت
-              </span>
-              <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
-                350000
-                <span className="font-DanaMedium text-xs"> تومان</span>
+              <div>
+                <span className="font-DanaMedium  text-gray-300 text-xs tracking-tighter">
+                  مبلغ قابل پرداخت
+                </span>
+                <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
+                  350000
+                  <span className="font-DanaMedium text-xs"> تومان</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         )}
       </div>
-      {showOverlay &&
-       (
+      {showOverlay && (
         <div
-          onClick={() => {setShowNavMenu(false)
-          setShowCart(false)
-        setShowOverlay(false)}}
+          onClick={() => {
+            setShowNavMenu(false);
+            setShowCart(false);
+            setShowOverlay(false);
+          }}
           className="fixed md:hidden inset-0 w-full h-full bg-black/40 z-10"
         ></div>
-      ) 
-      } 
+      )}
     </>
   );
 }

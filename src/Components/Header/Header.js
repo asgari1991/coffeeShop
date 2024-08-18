@@ -49,16 +49,14 @@ export default function Header() {
                     مشاهده سبد خرید
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="size-5"
                     >
                       <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M15.75 19.5 8.25 12l7.5-7.5"
+                        fillRule="evenodd"
+                        d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </a>
@@ -116,17 +114,21 @@ export default function Header() {
                 </div>
                 {/*Cart Footer */}
                 <div className="font-DanaMedium flex justify-between mt-5">
-                  
-                    <div>
-                      <span className="font-DanaMedium  text-gray-300 text-xs tracking-tighter">
-                       مبلغ قابل پرداخت
-                      </span>
-                      <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
-                        350000
-                        <span className="font-DanaMedium text-sm"> تومان</span>
-                      </div>
+                  <div>
+                    <span className="font-DanaMedium  text-gray-300 text-xs tracking-tighter">
+                      مبلغ قابل پرداخت
+                    </span>
+                    <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
+                      350000
+                      <span className="font-DanaMedium text-sm"> تومان</span>
                     </div>
-                  <a href="#" className="flex items-center justify-center w-[144px] h-14 text-white bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 dark:hover:bg-teal-600 transition-colors rounded-xl tracking-tightest">ثبت سفارش</a>
+                  </div>
+                  <a
+                    href="#"
+                    className="flex items-center justify-center w-[144px] h-14 text-white bg-teal-600 dark:bg-emerald-500 hover:bg-teal-700 dark:hover:bg-teal-600 transition-colors rounded-xl tracking-tightest"
+                  >
+                    ثبت سفارش
+                  </a>
                 </div>
               </div>
             </div>
