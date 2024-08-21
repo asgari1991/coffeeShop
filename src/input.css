@@ -97,4 +97,10 @@
     background: #ef4444;
     top: -2px;
 }
+
+}
+@layer utilities{
+    .flex-center{
+        @apply flex items-center justify-center
+    }
 }
