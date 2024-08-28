@@ -3,7 +3,7 @@ import ProductCard from "../ProductCard/ProductCard";
 
 export default function Products() {
   return (
-    <section className="products pt-8 md:24 lg:pt-48 pb-20">
+    <section className="products pt-8 md:pt-24 lg:pt-48">
       <div className="container">
         {/*Section Head */}
         <div className="flex justify-between items-end mb-5 md:mb-12">
