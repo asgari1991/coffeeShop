@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CategoryBanner() {
   return (
-    <section className='my-20'>
+    <section className='mt-8 mb-10 md:my-20'>
       <div className="container">
         <div className='grid grid-cols-1 md:grid-cols-2 gap-5 text-white'>
         <a href='#' className='category-banner__item1 flex flex-col justify-center pr-7 md:pr-12  rounded-2xl h-[142px] md:h-[248px]'>
