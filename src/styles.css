@@ -1039,6 +1039,10 @@ video {
   height: 2rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .h-\[142px\] {
   height: 142px;
 }
@@ -1109,6 +1113,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .w-\[100px\] {
@@ -1265,6 +1273,10 @@ video {
   column-gap: 1.5rem;
 }
 
+.gap-x-\[29px\] {
+  column-gap: 29px;
+}
+
 .gap-y-1 {
   row-gap: 0.25rem;
 }
@@ -1275,14 +1287,6 @@ video {
 
 .gap-y-6 {
   row-gap: 1.5rem;
-}
-
-.gap-x-0 {
-  column-gap: 0px;
-}
-
-.gap-x-\[29px\] {
-  column-gap: 29px;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1678,6 +1682,11 @@ video {
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .hover\:text-teal-600:hover {
   --tw-text-opacity: 1;
   color: rgb(13 148 136 / var(--tw-text-opacity));
@@ -1819,9 +1828,19 @@ video {
   background-color: rgb(13 148 136 / var(--tw-bg-opacity));
 }
 
+.dark\:hover\:bg-white:hover:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .dark\:hover\:text-emerald-500:hover:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity));
+}
+
+.dark\:hover\:text-zinc-700:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity));
 }
 
 @media (min-width: 480px) {
@@ -1903,6 +1922,10 @@ video {
     height: 0.125rem;
   }
 
+  .md\:h-10 {
+    height: 2.5rem;
+  }
+
   .md\:h-14 {
     height: 3.5rem;
   }
@@ -1927,8 +1950,16 @@ video {
     height: 30px;
   }
 
+  .md\:h-\[26px\] {
+    height: 26px;
+  }
+
   .md\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .md\:w-10 {
+    width: 2.5rem;
   }
 
   .md\:w-50 {
@@ -1949,6 +1980,10 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-\[26px\] {
+    width: 26px;
   }
 
   .md\:max-w-\[460px\] {
@@ -1977,6 +2012,10 @@ video {
 
   .md\:gap-x-3 {
     column-gap: 0.75rem;
+  }
+
+  .md\:gap-x-\[18px\] {
+    column-gap: 18px;
   }
 
   .md\:bg-home-desktop {
