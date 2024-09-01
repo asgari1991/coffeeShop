@@ -31,14 +31,14 @@ export default function Products() {
         </div>
         {/*Section Body */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 ">
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
+          <ProductCard img="./images/products/p1.png" price={154000}/>
+          <ProductCard img="./images/products/p2.png" price={154000}/>
+          <ProductCard img="./images/products/p3.png" price={154000}/>
+          <ProductCard img="./images/products/p4.png" price={154000}/>
+          <ProductCard img="./images/products/p6.png" price={154000}/>
+          <ProductCard img="./images/products/p7.png" price={154000}/>
+          <ProductCard img="./images/products/p5.png" price={154000}/>
+          <ProductCard img="./images/products/p8.png" price={154000}/>
         </div>
       </div>
     </section>

@@ -40,14 +40,14 @@ export default function TopSelling() {
         modules={[Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
-        <SwiperSlide><ProductCard/></SwiperSlide>
+        <SwiperSlide><ProductCard img="./images/products/p1.png"  price={175000}/></SwiperSlide>
+        <SwiperSlide><ProductCard img="./images/products/p2.png" price={154000}/></SwiperSlide>
+        <SwiperSlide><ProductCard img="./images/products/p3.png" price={175000}/></SwiperSlide>
+        <SwiperSlide><ProductCard img="./images/products/p4.png" price={154000}/></SwiperSlide>
+        <SwiperSlide><ProductCard img="./images/products/p5.png" price={154000}/></SwiperSlide>
+        <SwiperSlide><ProductCard img="./images/products/p6.png" price={175000}/></SwiperSlide>
+        <SwiperSlide><ProductCard img="./images/products/p7.png" price={154000}/></SwiperSlide>
+        <SwiperSlide><ProductCard img="./images/products/p8.png" price={154000}/></SwiperSlide>
       </Swiper>
       </div>
     </section>
