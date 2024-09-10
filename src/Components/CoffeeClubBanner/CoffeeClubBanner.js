@@ -4,11 +4,11 @@ export default function CoffeeClubBanner() {
   return (
     <section className="mb-8 md:mb-20">
       <div className="container">
-        <div className="flex items-center bg-gradient-to-r from-emerald-500 to-emerald-600 text-white h-36 px-3 md:px-11 rounded-2xl">
-          <div className="flex items-center gap-x-3 md:gap-x-6">
+        <div className="flex items-center flex-wrap lg:flex-nowrap lg:gap-x-4 xl:gap-x-24 gap-y-9 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-8 lg:py-0 lg:h-36 px-3 md:px-5 xl:px-11 rounded-2xl">
+          <div className="flex items-center md:shrink-0 gap-x-3 lg:gap-x-4 xl:gap-x-6 ">
             <img
               src="./images/club/diamond.png"
-              className="w-[87px] md:w-[110px]"
+              className="w-[87px] lg:w-[100px] xl:w-[110px]"
               alt="Coffee club"
             />
             <div>
@@ -20,8 +20,9 @@ export default function CoffeeClubBanner() {
               </p>
             </div>
           </div>
-          <div>
-            <div className="flex items-center gap-x-2 md:gap-x-5">
+          <div className="flex items-center justify-between w-full">
+            <div className="flex items-center gap-x-2 lg:gap-x-3 xl:gap-x-5  ">
+              
               <div className="w-[72px] h-[72px] md:w-[98px] md:h-[98px] text-center text-emerald-600 bg-white py-1.5 md:pt-5 md:pb-1 rounded-2xl">
                 <svg
                   className="w-10 h-10 md:w-12 md:h-12 mb-1 md:mb-1.5 mx-auto"
@@ -64,6 +65,17 @@ export default function CoffeeClubBanner() {
                 </svg>
                 <span className="text-xs md:text-sm "> جایزه ها</span>
               </div>
+            </div>
+            <div className="flex flex-col">
+              <span className=" md:mb-1 font-DanaDemiBold text-2xl md:text-3xl">542</span>
+              <span className="text-xs md:text-sm">امتیـــــــاز شما</span>
+              <a href="#" className="flex items-center justify-center mt-1 md:mt-2 w-[90px] md:w-[110px] h-[26px] md:h-8 bg-gradient-to-r from-orange-200 to-orange-300 font-DanaMedium text-xs md:text-sm rounded-full">
+              دریافت جایزه
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 md:w-6 md:h-6">
+  <path fillRule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
+</svg>
+
+              </a>
             </div>
           </div>
         </div>

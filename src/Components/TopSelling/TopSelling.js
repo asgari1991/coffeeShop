@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 export default function TopSelling() {
   return (
-    <section className="mb-9 md:mb-20">
+    <section className="mb-8 md:mb-20">
       <div className="container">
         {/*Section Head */}
         <div className="flex justify-between items-end mb-5 md:mb-12">
