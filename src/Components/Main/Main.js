@@ -5,6 +5,7 @@ import CategoryBanner from "../CategoryBanner/CategoryBanner";
 import ProductsCategory from "../ProductsCategoty/ProductsCategory";
 import TopSelling from "../TopSelling/TopSelling";
 import CoffeeClubBanner from "../CoffeeClubBanner/CoffeeClubBanner";
+import Blogs from "../Blogs/Blogs";
 
 export default function Main() {
   return (
@@ -15,6 +16,7 @@ export default function Main() {
       <ProductsCategory/>
       <TopSelling/>
       <CoffeeClubBanner/>
+      <Blogs/>
     </main>
   );
 }
