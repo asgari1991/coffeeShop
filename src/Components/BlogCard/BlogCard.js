@@ -2,10 +2,10 @@ import React from "react";
 
 export default function BlogCard() {
   return (
-    <div className="p-2.5 md:pb-2 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+    <div className="group p-2.5 md:pb-2 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
       <div className=" relative mb-4 rounded-2xl rounded-bl-4xl overflow-hidden">
         <img src="./images/blogs/blog-1.png" alt="blog 1" />
-        <div className=" absolute inset-0 w-full h-full hidden md:flex-center bg-gradient-to-r from-orange-200/80 to-orange-300/80">
+        <div className=" absolute inset-0 w-full h-full hidden md:flex-center invisible opacity-0 group-hover:visible delay-75 group-hover:opacity-100 bg-gradient-to-r from-orange-200/80 to-orange-300/80 transition-all">
         <svg
             viewBox="0 0 138 55"
             fill="currentColor"
@@ -26,12 +26,14 @@ export default function BlogCard() {
           </svg>
         </div>
       </div>
-      <div className="flex">
-        <h2 className="text-sm md:text-lg text-zinc-700 dark:text-white">
+      <div className="flex items-start justify-between">
+        <h2 className="font-DanaMedium md:font-Dana text-sm md:text-lg line-clamp-2 max-w-[193px] text-zinc-700 dark:text-white">
         طرز تهیه قهوه دمی با دستگاه اروپرس
         </h2>
-        <div className="text-teal-600 dark:text-emerald-500">
-            <span>
+       <div className="flex gap-x-5">
+<span className="block w-px h-[61px] bg-gray-100 dark:bg-white/10"></span>
+       <div className="flex flex-col ml-[18px] text-teal-600 dark:text-emerald-500 text-sm text-left">
+            <span className="font-DanaDemiBold text-xl">
             21
             </span>
             <span>
@@ -41,6 +43,7 @@ export default function BlogCard() {
             1402
             </span>
         </div>
+       </div>
       </div>
     </div>
   );
