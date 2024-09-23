@@ -31,10 +31,10 @@ export default function Blogs() {
         </div>
           {/*Section Content */}
           <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5'>
-<BlogCard/>
-<BlogCard/>
-<BlogCard/>
-<BlogCard/>
+<BlogCard img="./images/blogs/blog-1.png" title="طرز تهیه قهوه دمی با دستگاه اروپرس"/>
+<BlogCard img="./images/blogs/blog-2.png" title="یک نوشیدنی هیجان انگیز و پرکالری برای شروع روز"/>
+<BlogCard img="./images/blogs/blog-3.png" title="طرز تهیه یک فنجان کافه زینو برزیلی"/>
+<BlogCard img="./images/blogs/blog-4.png" title="طرز تهیه قهوه دالگونا مناسب روز‌های کرونایی"/>
           </div>
       </div>
     </section>

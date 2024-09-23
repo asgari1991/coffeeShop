@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function BlogCard() {
+export default function BlogCard({img,title}) {
   return (
     <div className="group flex sm:block gap-x-2.5 p-2.5 md:pb-2 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
       <div className=" relative w-[130px] h-[130px] shrink-0 sm:w-auto sm:h-auto sm:mb-4 rounded-2xl rounded-bl-4xl overflow-hidden">
-        <img src="./images/blogs/blog-1.png" className="h-full object-cover sm:h-auto" alt="blog 1" />
+        <img src={img} className="h-full object-cover sm:h-auto" alt="blog 1" />
         <div className=" absolute inset-0 w-full h-full hidden md:flex-center invisible opacity-0 group-hover:visible delay-75 group-hover:opacity-100 bg-gradient-to-r from-orange-200/80 to-orange-300/80 transition-all">
         <svg
             viewBox="0 0 138 55"
@@ -26,14 +26,13 @@ export default function BlogCard() {
           </svg>
         </div>
       </div>
-      <div className="w-full sm:flex items-start justify-between">
-        <a href="#" className="inline-block font-DanaMedium md:font-Dana mt-2.5 sm:mt-0 text-sm md:text-lg line-clamp-2 max-w-[193px] text-zinc-700 dark:text-white">
-        طرز تهیه قهوه دمی با دستگاه اروپرس
-        </a>
+      <div className="w-full flex flex-col sm:flex-row items-start justify-between">
+        <a href="#" className=" font-DanaMedium md:font-Dana ml-1.5 sm:ml-0 mt-2.5 sm:mt-0 text-sm/7 md:text-lg line-clamp-2 max-w-[193px] text-zinc-700 dark:text-white">
+{title}        </a>
        <div className="hidden sm:flex gap-x-5">
-<span className="block w-px h-[61px] bg-gray-100 dark:bg-white/10"></span>
-       <div className="flex flex-col ml-[18px] text-teal-600 dark:text-emerald-500 text-sm text-left">
-            <span className="font-DanaDemiBold text-xl">
+<span className="hidden lg:block w-px h-[61px] bg-gray-100 dark:bg-white/10"></span>
+       <div className="flex flex-col ml-[12px] lg:ml-[18px] text-teal-600 dark:text-emerald-500 text-sm text-left">
+            <span className="font-DanaDemiBold md:text-xl lg:text-2xl">
             21
             </span>
             <span>
@@ -44,9 +43,9 @@ export default function BlogCard() {
             </span>
         </div>
        </div>
-       <div className="flex items-end justify-between sm:hidden">
+       <div className="flex items-end justify-between sm:hidden w-full border-t border-t-gray-100 dark:border-t-white/10 pb-1.5 pt-[18px] mt-5">
 <span className="text-teal-600 dark:text-emerald-500 text-xs">21 مرداد 1403</span>
-<a href="#" className="flex items-center gap-x-1 font-DanaMedium text-xs h-5 rounded-md pr-2.5 pl-2 bg-orange-200/20 text-orange-300">
+<a href="#" className="flex items-center gap-x-1 font-DanaMedium text-xs h-5 rounded-md pr-2.5 pl-2 ml-1.5 bg-orange-200/20 text-orange-300">
 مطالعه
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5">
   <path fillRule="evenodd" d="M17 10a.75.75 0 0 1-.75.75H5.612l4.158 3.96a.75.75 0 1 1-1.04 1.08l-5.5-5.25a.75.75 0 0 1 0-1.08l5.5-5.25a.75.75 0 1 1 1.04 1.08L5.612 9.25H16.25A.75.75 0 0 1 17 10Z" clipRule="evenodd" />
