@@ -6,6 +6,7 @@ import ProductsCategory from "../ProductsCategoty/ProductsCategory";
 import TopSelling from "../TopSelling/TopSelling";
 import CoffeeClubBanner from "../CoffeeClubBanner/CoffeeClubBanner";
 import Blogs from "../Blogs/Blogs";
+import ContactUs from "../ContactUs/ContactUs";
 
 export default function Main() {
   return (
@@ -17,6 +18,7 @@ export default function Main() {
       <TopSelling/>
       <CoffeeClubBanner/>
       <Blogs/>
+      <ContactUs/>
     </main>
   );
 }
