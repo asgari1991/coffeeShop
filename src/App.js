@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import MobileHeader from "./Components/MobileHeader/MobileHeader";
@@ -10,6 +11,7 @@ function App() {
  <Header/>
  <MobileHeader/>
  <Main/>
+ <Footer/>
  </div>
   );
 }
