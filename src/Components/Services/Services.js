@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Services() {
   return (
-    <section className='mb-12 md:mb-36'>
+    <section className='services mb-12 md:mb-36'>
       <div className="container">
-<div className="flex items-center justify-between">
-<div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 ">
+<div className="flex items-center justify-between gap-y-11 flex-wrap child:w-1/2 lg:child:w-auto">
+<div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right ">
 <svg
 className='dark:hidden'
       width={66}
@@ -85,7 +85,7 @@ className='dark:hidden'
         <span className='text-xs md:text-sm/6'>7 روز هفته ، 24 ساعته</span>
     </div>
 </div>
-<div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 ">
+<div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right ">
 <svg
      className='dark:hidden'
      width={109}
@@ -185,7 +185,7 @@ className='dark:hidden'
         <span className='text-xs md:text-sm/6'>ارسال بسته با سرعت باد</span>
     </div>
 </div>
-<div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 ">
+<div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right ">
 <svg
 className='dark:hidden'
       width={52}
@@ -223,7 +223,7 @@ className='dark:hidden'
         <span className='text-xs md:text-sm/6'>تازه برشته شده و با کیفیت</span>
     </div>
 </div>
-<div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 ">
+<div className="flex items-center flex-col sm:flex-row gap-x-4 gap-y-5 text-center lg:text-right ">
 <svg className='dark:hidden' width="76" height="73" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M18.9999 35.5L10.4999 33V64.5L11.4999 68L16.4999 72H52.0002L55.0002 70.5L58.0002 67V34.5L45.0002 31.5L35.0002 33L20.0002 35.5H18.9999Z" fill="#FDBA74"/>
 <path d="M11.4999 10V3.5L13.9999 1H51.0002L56.0002 2V10H11.4999Z" fill="#0D9488"/>
