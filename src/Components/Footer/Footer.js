@@ -27,8 +27,9 @@ export default function Footer() {
           />
         </svg>
       </div>
-      <div className="flex justify-between flex-wrap sm:w-[94%] lg:w-[90%] px-4 md:px-0 mx-auto text-gray-300">
-        <div>
+      <div className=" sm:w-[94%] lg:w-[90%] px-4 md:px-0 mx-auto text-gray-300">
+      <div className="flex justify-between flex-wrap">
+      <div>
           <div className="flex gap-x-5 mb-6 md:mb-[18px] ">
             <svg
               viewBox="0 0 41 40"
@@ -134,7 +135,7 @@ export default function Footer() {
         </div>
         <div className="mt-10 md:mt-26px">
           <h4 className="font-DanaDemiBold text-2xl text-white mb-6 md:mb-7">
-            دسترسی سریع
+          در تماس باشیم
           </h4>
           <div>
             <div className="md:text-xl mb-6 md:mb-10">
@@ -196,8 +197,8 @@ export default function Footer() {
                       d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
                     />
                   </svg>
-                  <span>0902 123 6628</span>
-                  <span>021 - 6789012</span>
+                  <span className="ltr-text">0902 123 6628</span>
+                  <span className="ltr-text">021 - 6789012</span>
                 </div>
               </div>
             </div>
@@ -236,6 +237,17 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-between gap-4 flex-wrap font-DanaMedium text-xs/5 md:text-base border-t border-t-white/10 pt-10 md:pt-11 mt-10 md:mt-11">
+      <div>
+        
+        <p>تمام حقوق این رابط کاربری متعلق به <span className="text-orange-200">کیندر گروپ</span> میباشد.</p>
+      </div>
+      <span className="ltr-text mr-auto">
+      Copyright © 2023 Golden Coffee. All rights reserved.
+      </span>
+      </div>
+      
       </div>
     </footer>
   );

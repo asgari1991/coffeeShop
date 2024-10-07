@@ -33,7 +33,7 @@ export default function MobileHeader() {
         </div>
         {/*Menu */}
         {showNavMenu && (
-          <div className="fixed top-0 bottom-0 right-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all ">
+          <div className="fixed top-0 bottom-0 right-0 w-64 pt-3 px-4 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all ">
             {/*Nav Menu Header */}
             <div className="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
               <div className="flex gap-x-3.5">
@@ -135,7 +135,7 @@ export default function MobileHeader() {
         </div>
         {/*Cart */}
         {showCart && (
-          <div className="fixed top-0 bottom-0 left-0 flex flex-col w-64 min-h-screen pt-5 px-4 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all ">
+          <div className="fixed top-0 bottom-0 left-0 flex flex-col w-64 pt-5 px-4 bg-white dark:bg-zinc-700 z-20 overflow-y-auto transition-all ">
             {/*Cart Header */}
             <div className="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10">
               <div

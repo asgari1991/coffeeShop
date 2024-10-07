@@ -1022,6 +1022,10 @@ html.dark .services::before{
   margin-top: auto;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1399,6 +1403,10 @@ html.dark .services::before{
   gap: 1.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-x-1 {
   column-gap: 0.25rem;
 }
@@ -1590,6 +1598,15 @@ html.dark .services::before{
 .border-t-orange-300 {
   --tw-border-opacity: 1;
   border-top-color: rgb(253 186 116 / var(--tw-border-opacity));
+}
+
+.border-t-white {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-t-white\/10 {
+  border-top-color: rgb(255 255 255 / 0.1);
 }
 
 .bg-black\/40 {
@@ -1811,6 +1828,10 @@ html.dark .services::before{
   padding-top: 18px;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1878,6 +1899,21 @@ html.dark .services::before{
 .text-xs\/\[24px\] {
   font-size: 0.75rem;
   line-height: 24px;
+}
+
+.text-xs\/\[\] {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-xs\/\[20px\] {
+  font-size: 0.75rem;
+  line-height: 20px;
+}
+
+.text-xs\/5 {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
 }
 
 .tracking-normal {
@@ -2309,6 +2345,10 @@ html.dark .services::before{
     margin-top: 0.625rem;
   }
 
+  .md\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }
@@ -2533,6 +2573,10 @@ html.dark .services::before{
     padding-top: 62px;
   }
 
+  .md\:pt-11 {
+    padding-top: 2.75rem;
+  }
+
   .md\:font-Dana {
     font-family: Dana;
   }
@@ -2610,6 +2654,11 @@ html.dark .services::before{
   .md\:text-xl\/\[48px\] {
     font-size: 1.25rem;
     line-height: 48px;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:flex-center {
