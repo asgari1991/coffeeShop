@@ -907,18 +907,6 @@ html.dark .services::before{
   top: 100%;
 }
 
-.-top-1 {
-  top: -0.25rem;
-}
-
-.-top-1\.5 {
-  top: -0.375rem;
-}
-
-.-top-0 {
-  top: -0px;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -1010,6 +998,10 @@ html.dark .services::before{
   margin-top: 0.375rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1028,18 +1020,6 @@ html.dark .services::before{
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mb-\[\] {
-  margin-bottom: ;
-}
-
-.mb-\[18px\] {
-  margin-bottom: 18px;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .line-clamp-2 {
@@ -1188,16 +1168,8 @@ html.dark .services::before{
   height: 1px;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-44 {
-  height: 11rem;
+.h-12 {
+  height: 3rem;
 }
 
 .min-h-screen {
@@ -1210,6 +1182,10 @@ html.dark .services::before{
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .w-25 {
@@ -1296,6 +1272,10 @@ html.dark .services::before{
   width: 41px;
 }
 
+.w-\[57px\] {
+  width: 57px;
+}
+
 .w-\[72px\] {
   width: 72px;
 }
@@ -1320,14 +1300,6 @@ html.dark .services::before{
   width: 1px;
 }
 
-.w-\[57px\] {
-  width: 57px;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
 .max-w-\[193px\] {
   max-width: 193px;
 }
@@ -1344,13 +1316,17 @@ html.dark .services::before{
   flex-shrink: 0;
 }
 
-.translate-y-2\/4 {
-  --tw-translate-y: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.flex-grow {
+  flex-grow: 1;
 }
 
 .-translate-y-2\/4 {
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-2\/4 {
+  --tw-translate-y: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1427,6 +1403,14 @@ html.dark .services::before{
   column-gap: 0.25rem;
 }
 
+.gap-x-1\.5 {
+  column-gap: 0.375rem;
+}
+
+.gap-x-10 {
+  column-gap: 2.5rem;
+}
+
 .gap-x-2 {
   column-gap: 0.5rem;
 }
@@ -1471,6 +1455,18 @@ html.dark .services::before{
   row-gap: 2.75rem;
 }
 
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.gap-y-2\.5 {
+  row-gap: 0.625rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .gap-y-5 {
   row-gap: 1.25rem;
 }
@@ -1485,22 +1481,6 @@ html.dark .services::before{
 
 .gap-y-9 {
   row-gap: 2.25rem;
-}
-
-.gap-y-2 {
-  row-gap: 0.5rem;
-}
-
-.gap-y-2\.5 {
-  row-gap: 0.625rem;
-}
-
-.gap-x-10 {
-  column-gap: 2.5rem;
-}
-
-.gap-y-4 {
-  row-gap: 1rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1620,6 +1600,10 @@ html.dark .services::before{
   background-color: rgb(0 0 0 / 0.5);
 }
 
+.bg-current {
+  background-color: currentColor;
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1651,10 +1635,6 @@ html.dark .services::before{
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
-}
-
-.bg-current {
-  background-color: currentColor;
 }
 
 .bg-gradient-to-r {
@@ -1787,11 +1767,6 @@ html.dark .services::before{
   padding-bottom: 2rem;
 }
 
-.py-11 {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1834,10 +1809,6 @@ html.dark .services::before{
 
 .pt-\[18px\] {
   padding-top: 18px;
-}
-
-.pb-11 {
-  padding-bottom: 2.75rem;
 }
 
 .text-left {
@@ -1907,11 +1878,6 @@ html.dark .services::before{
 .text-xs\/\[24px\] {
   font-size: 0.75rem;
   line-height: 24px;
-}
-
-.text-xl\/\[48px\] {
-  font-size: 1.25rem;
-  line-height: 48px;
 }
 
 .tracking-normal {
@@ -2024,6 +1990,11 @@ html.dark .services::before{
   justify-content: center;
 }
 
+.ltr-text{
+  direction: ltr;
+  text-align: left;
+}
+
 .hover\:bg-teal-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(13 148 136 / var(--tw-bg-opacity));
@@ -2034,6 +2005,11 @@ html.dark .services::before{
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
 }
 
+.hover\:text-orange-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
 .hover\:text-teal-600:hover {
   --tw-text-opacity: 1;
   color: rgb(13 148 136 / var(--tw-text-opacity));
@@ -2042,11 +2018,6 @@ html.dark .services::before{
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-orange-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(253 186 116 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:visible {
@@ -2099,11 +2070,6 @@ html.dark .services::before{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.child\:hover\:text-orange-300:hover>* {
-  --tw-text-opacity: 1;
-  color: rgb(253 186 116 / var(--tw-text-opacity));
 }
 
 .child-hover\:text-orange-300>*:hover {
@@ -2246,6 +2212,14 @@ html.dark .services::before{
     width: auto;
   }
 
+  .sm\:w-\[9\] {
+    width: 9;
+  }
+
+  .sm\:w-\[94\%\] {
+    width: 94%;
+  }
+
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2277,6 +2251,10 @@ html.dark .services::before{
 
   .md\:mb-1\.5 {
     margin-bottom: 0.375rem;
+  }
+
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .md\:mb-12 {
@@ -2319,20 +2297,16 @@ html.dark .services::before{
     margin-bottom: 1.75rem;
   }
 
+  .md\:mb-\[18px\] {
+    margin-bottom: 18px;
+  }
+
   .md\:mt-2 {
     margin-top: 0.5rem;
   }
 
   .md\:mt-2\.5 {
     margin-top: 0.625rem;
-  }
-
-  .md\:mb-\[18px\] {
-    margin-bottom: 18px;
-  }
-
-  .md\:mb-10 {
-    margin-bottom: 2.5rem;
   }
 
   .md\:inline-block {
@@ -2391,6 +2365,10 @@ html.dark .services::before{
     height: 30px;
   }
 
+  .md\:h-\[38px\] {
+    height: 38px;
+  }
+
   .md\:h-\[60px\] {
     height: 60px;
   }
@@ -2405,6 +2383,14 @@ html.dark .services::before{
 
   .md\:w-12 {
     width: 3rem;
+  }
+
+  .md\:w-2 {
+    width: 0.5rem;
+  }
+
+  .md\:w-2\.5 {
+    width: 0.625rem;
   }
 
   .md\:w-50 {
@@ -2431,20 +2417,16 @@ html.dark .services::before{
     width: 22px;
   }
 
+  .md\:w-\[38px\] {
+    width: 38px;
+  }
+
   .md\:w-\[98px\] {
     width: 98px;
   }
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-2 {
-    width: 0.5rem;
-  }
-
-  .md\:w-2\.5 {
-    width: 0.625rem;
   }
 
   .md\:max-w-\[460px\] {
@@ -2475,16 +2457,20 @@ html.dark .services::before{
     gap: 65px;
   }
 
+  .md\:gap-x-16 {
+    column-gap: 4rem;
+  }
+
   .md\:gap-x-3 {
     column-gap: 0.75rem;
   }
 
-  .md\:gap-y-5 {
-    row-gap: 1.25rem;
+  .md\:gap-x-6 {
+    column-gap: 1.5rem;
   }
 
-  .md\:gap-x-16 {
-    column-gap: 4rem;
+  .md\:gap-y-5 {
+    row-gap: 1.25rem;
   }
 
   .md\:border-2 {
@@ -2497,6 +2483,11 @@ html.dark .services::before{
 
   .md\:p-5 {
     padding: 1.25rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:px-3 {
@@ -2514,18 +2505,12 @@ html.dark .services::before{
     padding-right: 1.25rem;
   }
 
-  .md\:py-11 {
-    padding-top: 2.75rem;
-    padding-bottom: 2.75rem;
-  }
-
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:pb-1 {
     padding-bottom: 0.25rem;
+  }
+
+  .md\:pb-11 {
+    padding-bottom: 2.75rem;
   }
 
   .md\:pb-2 {
@@ -2542,10 +2527,6 @@ html.dark .services::before{
 
   .md\:pt-5 {
     padding-top: 1.25rem;
-  }
-
-  .md\:pb-11 {
-    padding-bottom: 2.75rem;
   }
 
   .md\:pt-\[62px\] {
@@ -2659,6 +2640,10 @@ html.dark .services::before{
     width: 90%;
   }
 
+  .lg\:max-w-full {
+    max-width: 100%;
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2730,6 +2715,14 @@ html.dark .services::before{
 
   .xl\:w-\[110px\] {
     width: 110px;
+  }
+
+  .xl\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .xl\:max-w-\[606px\] {
+    max-width: 606px;
   }
 
   .xl\:gap-x-10 {
