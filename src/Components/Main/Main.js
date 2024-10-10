@@ -8,12 +8,13 @@ import CoffeeClubBanner from "../CoffeeClubBanner/CoffeeClubBanner";
 import Blogs from "../Blogs/Blogs";
 import ContactUs from "../ContactUs/ContactUs";
 import Services from "../Services/Services";
+import ProductsSection from "../ProductsSection/ProductsSection";
 
 export default function Main() {
   return (
     <main>
       <Home/>
-      <Products/>
+      <ProductsSection/>
       <CategoryBanner/>
       <ProductsCategory/>
       <TopSelling/>

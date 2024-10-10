@@ -1,11 +1,13 @@
 import React from 'react'
 
-export default function ProductCard({img,price}) {
+export default function ProductCard({img,price,discount}) {
   return (
     <div className='p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal '>
       <div className=' relative mb-2 md:mb-5'>
         <img src={img} className='w-32 mx-auto md:w-auto' loading='lazy' alt="p1" />
-        <span className=' absolute top-1.5 right-1.5 block h-5 md:h-[30px] text-xs/[24px] md:text-base/[34px] bg-orange-300 font-DanaDemiBold text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full'>12%</span>
+        {
+          discount && <span className=' absolute top-1.5 right-1.5 block h-5 md:h-[30px] text-xs/[24px] md:text-base/[34px] bg-orange-300 font-DanaDemiBold text-white dark:text-zinc-700 px-2.5 md:px-3.5 rounded-full'>{discount}%</span>
+        }
       </div>
       <h5 className='h-10 md:h-14 font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2'>
         قهوه ترک بن مانو مقدار 250 گرم
@@ -16,10 +18,10 @@ export default function ProductCard({img,price}) {
             <span className='font-DanaDemiBold text-base md:text-xl'>{price} </span>
             <span className='text-xs md:text-sm tracking-tighter'>تومان</span>
         </div>
-        <div className='offer'>
-        <span className='text-base md:text-xl'>175,000 </span>
+       {discount &&  <div className='offer'>
+        <span className='text-base md:text-xl'>{price-(price*discount/100)} </span>
             <span className='hidden xl:inline text-xs md:text-sm tracking-tighter'>تومان</span>
-        </div>
+        </div>}
       </div>
       <div className='flex items-center justify-between mt-2.5'>
         <div className='flex items-center gap-x-2.5 md:gap-x-3'>

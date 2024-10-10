@@ -159,8 +159,7 @@ export default function Footer() {
                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                   />
                 </svg>
-                بلوار میرداماد، خیابان البرز، کوچه قبادیان شرقی، پلاک ۳۳
-              </span>
+جهان پناه مجتمع تجاری میلاد              </span>
               <div className="font-DanaMedium flex flex-wrap gap-y-4 gap-x-5">
                 <a
                   href="mailto:info@Coffee.com"
@@ -198,7 +197,7 @@ export default function Footer() {
                     />
                   </svg>
                   <span className="ltr-text">0902 123 6628</span>
-                  <span className="ltr-text">021 - 6789012</span>
+                  <span className="ltr-text">086 - 6789012</span>
                 </div>
               </div>
             </div>

@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import ProductCard from "../ProductCard/ProductCard";
+import productContext from "../../Contexts/ProductContext";
 
 export default function Products() {
+  const contextData=useContext(productContext)
   return (
-    <section className="products pt-8 md:pt-24 lg:pt-48">
-      <div className="container">
-        {/*Section Head */}
-        <div className="flex justify-between items-end mb-5 md:mb-12">
+ <>
+ {contextData.allProducts.map(productType=>(
+<>
+{/*Section Head */}
+<div className="flex justify-between items-end mt-5 md:mt-12 ">
           
-          <div>
-            <h3 className="section-title">جدیدترین محصولات</h3>
-            <span className="section-subtitle">فرآوری شده از دانه قهوه</span>
+          <div >
+            <span className="section-subtitle">
+              {productType.title==='espresso' ? "اسپرسو":"قهوه دمی"}
+            </span>
           </div>
           <a href="#" className="section-link">
             <span className="hidden md:inline-block">مشاهده همه محصولات</span>
@@ -31,16 +35,17 @@ export default function Products() {
         </div>
         {/*Section Body */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 ">
-          <ProductCard img="./images/products/p1.png" price={154000}/>
-          <ProductCard img="./images/products/p2.png" price={154000}/>
-          <ProductCard img="./images/products/p3.png" price={154000}/>
-          <ProductCard img="./images/products/p4.png" price={154000}/>
-          <ProductCard img="./images/products/p6.png" price={154000}/>
-          <ProductCard img="./images/products/p7.png" price={154000}/>
-          <ProductCard img="./images/products/p5.png" price={154000}/>
-          <ProductCard img="./images/products/p8.png" price={154000}/>
+          {productType.infos.map(product=>(
+            <ProductCard img={product.img} price={product.price} discount={product.discount}/>
+          ))}
+          
+        
         </div>
-      </div>
-    </section>
+</>
+ ))}
+ 
+ </>
+        
+     
   );
 }
