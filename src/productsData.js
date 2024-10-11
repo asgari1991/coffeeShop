@@ -9,10 +9,10 @@ infos:[
 {
     title: 'ُbrewed',
     infos:[
-    {id:1 ,  img:"./images/products/p5.png",price: 320000,isAvailable:true,discount:25},
-    {id:2,img:"./images/products/p6.png",price: 290000,isAvailable:true,discount:false},
-    {id:3 ,  img:"./images/products/p7.png",price: 350000,isAvailable:true,discount:false},
-    {id:4 , img:"./images/products/p8.png",price: 220000,isAvailable:true,discount:10}
+    {id:5 ,  img:"./images/products/p5.png",price: 320000,isAvailable:true,discount:25},
+    {id:6,img:"./images/products/p6.png",price: 290000,isAvailable:true,discount:false},
+    {id:7 ,  img:"./images/products/p7.png",price: 350000,isAvailable:true,discount:false},
+    {id:8 , img:"./images/products/p8.png",price: 220000,isAvailable:true,discount:10}
     ]
 }
 ]

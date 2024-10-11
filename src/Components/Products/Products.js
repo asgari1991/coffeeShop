@@ -36,7 +36,7 @@ export default function Products() {
         {/*Section Body */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 ">
           {productType.infos.map(product=>(
-            <ProductCard img={product.img} price={product.price} discount={product.discount}/>
+            <ProductCard img={product.img} price={product.price} discount={product.discount} id={product.id}/>
           ))}
           
         

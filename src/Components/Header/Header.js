@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import NavLink from "../NavLink/NavLink";
+import productContext from "../../Contexts/ProductContext";
 
 export default function Header() {
+  const contextData=useContext(productContext)
+  const [cartPrice,setCartPrice]=useState(0)
   const darkModeHandler = () => {
     if (localStorage.theme === "dark") {
       document.documentElement.classList.remove("dark");
@@ -63,9 +66,11 @@ export default function Header() {
                 </div>
                 {/*Cart Body */}
                 <div className="pb-1 border-b border-gray-300 dark:border-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5">
-                  <div className="font-DanaMedium flex gap-x-2.5   ">
+                  {
+                    contextData.userCart.map(productCart=>(
+<div className="font-DanaMedium flex gap-x-2.5   ">
                     <img
-                      src="images/products/p1.png"
+                      src={productCart.img}
                       className="w-30 h-30"
                       alt="p1"
                     />
@@ -75,10 +80,10 @@ export default function Header() {
                       </h4>
                       <div>
                         <span className="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">
-                          14.500 تومان تخفیف
+                          {productCart.price*productCart.discount/100} تومان تخفیف
                         </span>
                         <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
-                          175000
+                          {productCart.price}
                           <span className="font-DanaMedium text-sm">
                             {" "}
                             تومان
@@ -87,30 +92,11 @@ export default function Header() {
                       </div>
                     </div>
                   </div>
-                  <div className="font-DanaMedium flex gap-x-2.5   ">
-                    <img
-                      src="images/products/p2.png"
-                      className="w-30 h-30"
-                      alt="p1"
-                    />
-                    <div className="flex flex-col justify-between">
-                      <h4 className=" text-zinc-700 dark:text-white line-clamp-2">
-                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
-                      </h4>
-                      <div>
-                        <span className="text-teal-600 dark:text-emerald-500 text-xs tracking-tighter">
-                          14.500 تومان تخفیف
-                        </span>
-                        <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
-                          175000
-                          <span className="font-DanaMedium text-sm">
-                            {" "}
-                            تومان
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    )
+                    )
+                    
+                  }
+                  
                 </div>
                 {/*Cart Footer */}
                 <div className="font-DanaMedium flex justify-between mt-5">
@@ -119,7 +105,8 @@ export default function Header() {
                       مبلغ قابل پرداخت
                     </span>
                     <div className="text-zinc-700 dark:text-white font-DanaDemiBold">
-                      350000
+                     {cartPrice}
+                     
                       <span className="font-DanaMedium text-sm"> تومان</span>
                     </div>
                   </div>

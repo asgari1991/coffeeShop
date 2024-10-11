@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import productContext from '../../Contexts/ProductContext'
 
-export default function ProductCard({img,price,discount}) {
+export default function ProductCard({img,price,discount,id}) {
+  const contextData=useContext(productContext)
   return (
     <div className='p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal '>
       <div className=' relative mb-2 md:mb-5'>
@@ -25,7 +27,27 @@ export default function ProductCard({img,price,discount}) {
       </div>
       <div className='flex items-center justify-between mt-2.5'>
         <div className='flex items-center gap-x-2.5 md:gap-x-3'>
-          <span className='flex-center w-[26px] h-[26px] md:w-9 md:h-9 hover:text-white hover:bg-teal-600 dark:hover:bg-emerald-500 bg-gray-100 dark:bg-zinc-800 text-gray-400 cursor-pointer rounded-full'>
+          <span className='flex-center w-[26px] h-[26px] md:w-9 md:h-9 hover:text-white hover:bg-teal-600 dark:hover:bg-emerald-500 bg-gray-100 dark:bg-zinc-800 text-gray-400 cursor-pointer rounded-full' onClick={()=>{
+            let isInUserCart=contextData.userCart.some(cartProduct=>cartProduct.id===id)
+            if (!isInUserCart){
+              let newProduct={
+                id:contextData.userCart.length,
+                img,
+                price,
+                discount,
+                count:1
+              }
+              contextData.setUserCart(prev=>[...prev,newProduct])
+            }else{
+              let newCart=contextData.userCart
+              newCart.some(cartProduct=>{
+                if (cartProduct.id===id){
+                  cartProduct.count+=1
+                }
+                })
+                contextData.setUserCart(newCart)
+            }
+          }}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="md:w-[22px] md:h-[22px] w-4 h-4 transition-all ">
   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
 </svg>
